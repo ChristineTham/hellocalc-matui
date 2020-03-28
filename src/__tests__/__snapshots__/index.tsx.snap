@@ -1,0 +1,32 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Index renders correctly 1`] = `
+<div
+  className="MuiContainer-root MuiContainer-maxWidthMd"
+>
+  <div
+    className="MuiPaper-root MuiPaper-elevation1 MuiPaper-rounded"
+  >
+    <p
+      className="MuiTypography-root MuiTypography-body1"
+    >
+      <h1>
+        Hello World
+      </h1>
+      <p
+        className="MuiTypography-root MuiTypography-body2 MuiTypography-colorTextSecondary MuiTypography-alignCenter"
+      >
+        Copyright © 
+        <a
+          href="https://www.hellotham.com/"
+        >
+          Hello Tham Pty Ltd
+        </a>
+         
+        2020
+        .
+      </p>
+    </p>
+  </div>
+</div>
+`;
