@@ -34,7 +34,7 @@ const calculator = createSlice({
       state.stack.x = state.stack.y
       state.stack.y = state.stack.z
       state.stack.z = state.stack.t
-      state.stack.t = 0
+      state.stack.t = '0'
     },
     clearStack: (state): void => {
       // need to push stack up first

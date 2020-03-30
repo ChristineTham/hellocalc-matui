@@ -65,7 +65,7 @@ const features = [
   },
 ]
 
-const Index: React.FC = () => (
+const Index = () => (
   <>
     <CssBaseline />
     <MainFeaturedPost post={mainFeaturedPost} />
