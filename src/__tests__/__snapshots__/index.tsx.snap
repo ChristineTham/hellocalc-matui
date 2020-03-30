@@ -1,32 +1,455 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Index renders correctly 1`] = `
-<div
-  className="MuiContainer-root MuiContainer-maxWidthMd"
->
+Array [
   <div
-    className="MuiPaper-root MuiPaper-elevation1 MuiPaper-rounded"
+    className="MuiPaper-root makeStyles-mainFeaturedPost-1 MuiPaper-elevation1 MuiPaper-rounded"
+    style={
+      Object {
+        "backgroundImage": "url(test-file-stub)",
+      }
+    }
   >
-    <p
-      className="MuiTypography-root MuiTypography-body1"
+    <img
+      src="test-file-stub"
+      style={
+        Object {
+          "display": "none",
+        }
+      }
+    />
+    <div
+      className="makeStyles-overlay-2"
+    />
+    <div
+      className="MuiGrid-root MuiGrid-container"
     >
-      <h1>
-        Hello World
-      </h1>
-      <p
-        className="MuiTypography-root MuiTypography-body2 MuiTypography-colorTextSecondary MuiTypography-alignCenter"
+      <div
+        className="MuiGrid-root MuiGrid-item MuiGrid-grid-md-6"
       >
-        Copyright © 
-        <a
-          href="https://www.hellotham.com/"
+        <div
+          className="makeStyles-mainFeaturedPostContent-3"
         >
-          Hello Tham Pty Ltd
-        </a>
-         
-        2020
-        .
-      </p>
+          <h1
+            className="MuiTypography-root MuiTypography-h3 MuiTypography-colorInherit MuiTypography-gutterBottom"
+          >
+            The Calculator ... Reimagined
+          </h1>
+          <p
+            className="MuiTypography-root MuiTypography-h5 MuiTypography-colorInherit MuiTypography-paragraph"
+          >
+            What would the humble pocket calculator look like if it was reimagined as a modern serverless web app?
+          </p>
+          <a
+            className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-subtitle1 MuiTypography-colorPrimary"
+            href="#"
+            onBlur={[Function]}
+            onFocus={[Function]}
+          />
+        </div>
+      </div>
+    </div>
+  </div>,
+  <div
+    className="MuiContainer-root MuiContainer-maxWidthLg"
+  >
+    <div
+      className="MuiBox-root MuiBox-root-180"
+    >
+      <main
+        className="MuiContainer-root MuiContainer-maxWidthMd"
+      >
+        <div
+          className="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-5 MuiGrid-align-items-xs-center"
+        >
+          <div
+            className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-6 MuiGrid-grid-md-3"
+          >
+            <div
+              className="MuiPaper-root MuiCard-root MuiPaper-elevation1 MuiPaper-rounded"
+            >
+              <div
+                className="MuiCardHeader-root makeStyles-cardHeader-182"
+              >
+                <div
+                  className="MuiCardHeader-content"
+                >
+                  <span
+                    className="MuiTypography-root MuiCardHeader-title MuiTypography-h5 MuiTypography-alignCenter MuiTypography-displayBlock"
+                  >
+                    Calculator
+                  </span>
+                </div>
+              </div>
+              <div
+                className="MuiCardContent-root"
+              >
+                <div
+                  className="makeStyles-cardContent-183"
+                >
+                  <div
+                    className="MuiAvatar-root MuiAvatar-circle makeStyles-pink-184 MuiAvatar-colorDefault"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      className="MuiSvgIcon-root"
+                      focusable="false"
+                      style={
+                        Object {
+                          "fontSize": 64,
+                        }
+                      }
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M7,2H17A2,2 0 0,1 19,4V20A2,2 0 0,1 17,22H7A2,2 0 0,1 5,20V4A2,2 0 0,1 7,2M7,4V8H17V4H7M7,10V12H9V10H7M11,10V12H13V10H11M15,10V12H17V10H15M7,14V16H9V14H7M11,14V16H13V14H11M15,14V16H17V14H15M7,18V20H9V18H7M11,18V20H13V18H11M15,18V20H17V18H15Z"
+                      />
+                    </svg>
+                  </div>
+                </div>
+                <ul>
+                  <li
+                    className="MuiTypography-root MuiTypography-subtitle1 MuiTypography-alignCenter"
+                  >
+                    RPN logic
+                  </li>
+                  <li
+                    className="MuiTypography-root MuiTypography-subtitle1 MuiTypography-alignCenter"
+                  >
+                    Calculator Keyboard
+                  </li>
+                  <li
+                    className="MuiTypography-root MuiTypography-subtitle1 MuiTypography-alignCenter"
+                  >
+                    Stack History
+                  </li>
+                </ul>
+              </div>
+              <div
+                className="MuiCardActions-root MuiCardActions-spacing"
+              >
+                <button
+                  className="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-fullWidth"
+                  disabled={false}
+                  onBlur={[Function]}
+                  onClick={[Function]}
+                  onDragLeave={[Function]}
+                  onFocus={[Function]}
+                  onKeyDown={[Function]}
+                  onKeyUp={[Function]}
+                  onMouseDown={[Function]}
+                  onMouseLeave={[Function]}
+                  onMouseUp={[Function]}
+                  onTouchEnd={[Function]}
+                  onTouchMove={[Function]}
+                  onTouchStart={[Function]}
+                  tabIndex={0}
+                  type="button"
+                >
+                  <span
+                    className="MuiButton-label"
+                  >
+                    Calculator
+                  </span>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div
+            className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-6 MuiGrid-grid-md-3"
+          >
+            <div
+              className="MuiPaper-root MuiCard-root MuiPaper-elevation1 MuiPaper-rounded"
+            >
+              <div
+                className="MuiCardHeader-root makeStyles-cardHeader-182"
+              >
+                <div
+                  className="MuiCardHeader-content"
+                >
+                  <span
+                    className="MuiTypography-root MuiCardHeader-title MuiTypography-h5 MuiTypography-alignCenter MuiTypography-displayBlock"
+                  >
+                    Expression
+                  </span>
+                </div>
+              </div>
+              <div
+                className="MuiCardContent-root"
+              >
+                <div
+                  className="makeStyles-cardContent-183"
+                >
+                  <div
+                    className="MuiAvatar-root MuiAvatar-circle makeStyles-pink-184 MuiAvatar-colorDefault"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      className="MuiSvgIcon-root"
+                      focusable="false"
+                      style={
+                        Object {
+                          "fontSize": 64,
+                        }
+                      }
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M9,2H4A2,2 0 0,0 2,4V9A2,2 0 0,0 4,11H9A2,2 0 0,0 11,9V4A2,2 0 0,0 9,2M9,7H4V6H9V7M20,13H15A2,2 0 0,0 13,15V20A2,2 0 0,0 15,22H20A2,2 0 0,0 22,20V15A2,2 0 0,0 20,13M20,19H15V18H20V19M20,17H15V16H20V17M20,2H15A2,2 0 0,0 13,4V9A2,2 0 0,0 15,11H20A2,2 0 0,0 22,9V4A2,2 0 0,0 20,2M20,7H18V9H17V7H15V6H17V4H18V6H20V7M9,13H4A2,2 0 0,0 2,15V20A2,2 0 0,0 4,22H9A2,2 0 0,0 11,20V15A2,2 0 0,0 9,13M8.62,18.91L7.91,19.62L6.5,18.21L5.09,19.62L4.38,18.91L5.79,17.5L4.38,16.09L5.09,15.38L6.5,16.79L7.91,15.38L8.62,16.09L7.21,17.5L8.62,18.91Z"
+                      />
+                    </svg>
+                  </div>
+                </div>
+                <ul>
+                  <li
+                    className="MuiTypography-root MuiTypography-subtitle1 MuiTypography-alignCenter"
+                  >
+                    Evaluate formula
+                  </li>
+                  <li
+                    className="MuiTypography-root MuiTypography-subtitle1 MuiTypography-alignCenter"
+                  >
+                    History
+                  </li>
+                  <li
+                    className="MuiTypography-root MuiTypography-subtitle1 MuiTypography-alignCenter"
+                  >
+                    Variables
+                  </li>
+                </ul>
+              </div>
+              <div
+                className="MuiCardActions-root MuiCardActions-spacing"
+              >
+                <button
+                  className="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-fullWidth"
+                  disabled={false}
+                  onBlur={[Function]}
+                  onClick={[Function]}
+                  onDragLeave={[Function]}
+                  onFocus={[Function]}
+                  onKeyDown={[Function]}
+                  onKeyUp={[Function]}
+                  onMouseDown={[Function]}
+                  onMouseLeave={[Function]}
+                  onMouseUp={[Function]}
+                  onTouchEnd={[Function]}
+                  onTouchMove={[Function]}
+                  onTouchStart={[Function]}
+                  tabIndex={0}
+                  type="button"
+                >
+                  <span
+                    className="MuiButton-label"
+                  >
+                    Expression
+                  </span>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div
+            className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-6 MuiGrid-grid-md-3"
+          >
+            <div
+              className="MuiPaper-root MuiCard-root MuiPaper-elevation1 MuiPaper-rounded"
+            >
+              <div
+                className="MuiCardHeader-root makeStyles-cardHeader-182"
+              >
+                <div
+                  className="MuiCardHeader-content"
+                >
+                  <span
+                    className="MuiTypography-root MuiCardHeader-title MuiTypography-h5 MuiTypography-alignCenter MuiTypography-displayBlock"
+                  >
+                    Graph
+                  </span>
+                </div>
+              </div>
+              <div
+                className="MuiCardContent-root"
+              >
+                <div
+                  className="makeStyles-cardContent-183"
+                >
+                  <div
+                    className="MuiAvatar-root MuiAvatar-circle makeStyles-pink-184 MuiAvatar-colorDefault"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      className="MuiSvgIcon-root"
+                      focusable="false"
+                      style={
+                        Object {
+                          "fontSize": 64,
+                        }
+                      }
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M9.96,11.31C10.82,8.1 11.5,6 13,6C14.5,6 15.18,8.1 16.04,11.31C17,14.92 18.1,19 22,19V17C19.8,17 19,14.54 17.97,10.8C17.08,7.46 16.15,4 13,4C9.85,4 8.92,7.46 8.03,10.8C7.03,14.54 6.2,17 4,17V2H2V22H22V20H4V19C7.9,19 9,14.92 9.96,11.31Z"
+                      />
+                    </svg>
+                  </div>
+                </div>
+                <ul>
+                  <li
+                    className="MuiTypography-root MuiTypography-subtitle1 MuiTypography-alignCenter"
+                  >
+                    Graph functions
+                  </li>
+                  <li
+                    className="MuiTypography-root MuiTypography-subtitle1 MuiTypography-alignCenter"
+                  >
+                    Flexible
+                  </li>
+                  <li
+                    className="MuiTypography-root MuiTypography-subtitle1 MuiTypography-alignCenter"
+                  >
+                    Cute
+                  </li>
+                </ul>
+              </div>
+              <div
+                className="MuiCardActions-root MuiCardActions-spacing"
+              >
+                <button
+                  className="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-fullWidth"
+                  disabled={false}
+                  onBlur={[Function]}
+                  onClick={[Function]}
+                  onDragLeave={[Function]}
+                  onFocus={[Function]}
+                  onKeyDown={[Function]}
+                  onKeyUp={[Function]}
+                  onMouseDown={[Function]}
+                  onMouseLeave={[Function]}
+                  onMouseUp={[Function]}
+                  onTouchEnd={[Function]}
+                  onTouchMove={[Function]}
+                  onTouchStart={[Function]}
+                  tabIndex={0}
+                  type="button"
+                >
+                  <span
+                    className="MuiButton-label"
+                  >
+                    Graph
+                  </span>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div
+            className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-6 MuiGrid-grid-md-3"
+          >
+            <div
+              className="MuiPaper-root MuiCard-root MuiPaper-elevation1 MuiPaper-rounded"
+            >
+              <div
+                className="MuiCardHeader-root makeStyles-cardHeader-182"
+              >
+                <div
+                  className="MuiCardHeader-content"
+                >
+                  <span
+                    className="MuiTypography-root MuiCardHeader-title MuiTypography-h5 MuiTypography-alignCenter MuiTypography-displayBlock"
+                  >
+                    Block
+                  </span>
+                </div>
+              </div>
+              <div
+                className="MuiCardContent-root"
+              >
+                <div
+                  className="makeStyles-cardContent-183"
+                >
+                  <div
+                    className="MuiAvatar-root MuiAvatar-circle makeStyles-pink-184 MuiAvatar-colorDefault"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      className="MuiSvgIcon-root"
+                      focusable="false"
+                      style={
+                        Object {
+                          "fontSize": 64,
+                        }
+                      }
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M14,17H7V15H14M17,13H7V11H17M17,9H7V7H17M19,3H5C3.89,3 3,3.89 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V5C21,3.89 20.1,3 19,3Z"
+                      />
+                    </svg>
+                  </div>
+                </div>
+                <ul>
+                  <li
+                    className="MuiTypography-root MuiTypography-subtitle1 MuiTypography-alignCenter"
+                  >
+                    Evaluate Block
+                  </li>
+                  <li
+                    className="MuiTypography-root MuiTypography-subtitle1 MuiTypography-alignCenter"
+                  >
+                    Scope
+                  </li>
+                  <li
+                    className="MuiTypography-root MuiTypography-subtitle1 MuiTypography-alignCenter"
+                  >
+                    List
+                  </li>
+                </ul>
+              </div>
+              <div
+                className="MuiCardActions-root MuiCardActions-spacing"
+              >
+                <button
+                  className="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-fullWidth"
+                  disabled={false}
+                  onBlur={[Function]}
+                  onClick={[Function]}
+                  onDragLeave={[Function]}
+                  onFocus={[Function]}
+                  onKeyDown={[Function]}
+                  onKeyUp={[Function]}
+                  onMouseDown={[Function]}
+                  onMouseLeave={[Function]}
+                  onMouseUp={[Function]}
+                  onTouchEnd={[Function]}
+                  onTouchMove={[Function]}
+                  onTouchStart={[Function]}
+                  tabIndex={0}
+                  type="button"
+                >
+                  <span
+                    className="MuiButton-label"
+                  >
+                    Graph
+                  </span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+    <p
+      className="MuiTypography-root MuiTypography-body2 MuiTypography-colorTextSecondary MuiTypography-alignCenter"
+    >
+      Copyright © 
+      <a
+        href="https://www.hellotham.com/"
+      >
+        Hello Tham Pty Ltd
+      </a>
+       
+      2020
+      .
     </p>
-  </div>
-</div>
+  </div>,
+]
 `;

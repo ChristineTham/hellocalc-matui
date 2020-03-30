@@ -15,17 +15,17 @@
     "import/resolver": {
       "node": {
         "paths": ["./", "src"],
-        "extensions": [".js", ".jsx", ".ts", ".tsx", "json"],
+        "extensions": [".js", ".jsx", ".ts", ".tsx", "json"]
       },
       // Resolve Aliases
       // =================================
-      "alias": {
-        "map": [
-          [ "~", "./src" ],
-        ],
-        "extensions": [ ".js", ".jsx", ".ts", ".tsx", "json", ".d.ts" ],
-      },
-    },
+      // "alias": {
+      //   "map": [
+      //     [ "~", "./src" ]
+      //   ],
+      //   "extensions": [ ".js", ".jsx", ".ts", ".tsx", "json", ".d.ts" ]
+      // }
+    }
   },
   "rules": {
     "max-len": ["error", { "code": 140, "ignoreUrls": true }],
