@@ -1,99 +1,46 @@
-<p align="center">
-  <a href="https://www.gatsbyjs.org">
-    <img alt="Gatsby" src="https://www.gatsbyjs.org/monogram.svg" width="60" />
-  </a>
-</p>
-<h1 align="center">
-  hello-gatsby
-</h1>
+## Hello Calc
 
-> My starter kit for Gatsby projects based on gatsby-starter-typescript-plus
+Experimental advanced calculator, reimagined as a modern app.
 
-This is a starter kit for [Gatsby.js](https://www.gatsbyjs.org/) websites written in TypeScript.
-It is the basis for my Gatsby React projects.
+Why do Javascript calculators have to emulate a physical device? Do we really want to hunt and peck virtual keys on a screen?
+On a tablet or smartphone, possibly, but not on a browser running on a computer with a keyboard and mouse.
 
-## 🗒️ Features
+This experiment reimagines a calculator as a modern serverless app complete with
+* Expression evaluator with history stack, variables, expression library
+* Graphing
+* Editor based block evaluations
+* And yes, if you want it, a homage to the desktop calculator (with RPN logic)
 
-- TypeScript
-- ESLint (with custom ESLint rules) and Prettier
-- Material UI
-- Styling with [emotion](https://emotion.sh/)
-- Redux, Redux Toolkit, React Redux
-- HelloBar component
-- Testing with Jest
+This has been built on top of my [hello-gatsby](https://github.com/ChristineTham/hello-gatsby.git) Gatsby starter kit template.
+It uses the following technologies:
+* [Gatsby](https://www.gatsbyjs.org)
+* [React](https://reactjs.org)
+* [Material UI](https://material-ui.com)
+* [Redux and Redux Toolkit](https://redux.js.org)
+* [MathJS](https://mathjs.org)
+* [KaTeX](https://katex.org/)
+* [Plotly JS](https://plotly.com/javascript/)
+* [Monaco Editor](https://microsoft.github.io/monaco-editor/)
+* [Typescript](https://www.typescriptlang.org)
+* [Jest](https://jestjs.io/)
+* [Storybook JS](https://storybook.js.org/)
+* [Visual Studio Code](https://code.visualstudio.com/)
 
-## 🚀 Quick start
+## Quick Start
 
-> A nodejs >= 6.0.0 setup with [yarn](https://yarnpkg.com/) is recommended.
+#### 1. Run `yarn start`
 
-1.  **Create a Gatsby site.**
+This will install both run-time project dependencies and developer tools listed
+in [package.json](../package.json) file.
 
-    Install `gatsby-cli` package globally on your machine.
+#### 2. Run `gatsby develop`
 
-    ```bash
-    # using NPM
-    npm install -g gatsby-cli
+This command will start the app
 
-    # using YARN
-    yarn global add gatsby-cli
-    ```
+## License
 
-    Use the `gatsby-cli` to create a new site and install its dependencies.
-
-    ```bash
-    gatsby new project-name https://github.com/ChristineTham/hello-gatsby.git
-    ```
-
-2.  **Start developing.**
-
-    Move to project's directory.
-
-    ```bash
-    cd project-name/
-    ```
-
-    Start your site.
-
-    ```bash
-    # using npm
-    npm start
-
-    # using yarn
-    yarn start
-    ```
-
-    Open source code using your favorite IDE/Text editor and navigate to `src/` directory, this is where your application live.
-
-3.  **Build your application for production.**
-
-    Once you're finished, you can make production build of your app using:
-
-    ```bash
-    # using npm
-    npm run build
-
-    # using yarn
-    yarn build
-    ```
-
-4.  **Deploy your app to Github pages!**
-
-    After building your application in step 3, you're ready to publish your app and go online!
-
-    ```bash
-    # using npm
-    npm run deploy
-
-    # using yarn
-    yarn deploy
-    ```
-
-## ❤️ Credits
-
-Based on [gatsby-starter-typescript-plus](https://gatsby-starter-typescript-plus.netlify.com).
-Built with [Gatsby](https://www.gatsbyjs.org/) -
-the blazing-fast static site generator for [React](https://reactjs.org/).
+[MIT](https://github.com/ChristineTham/hellocalc-matui/raw/master/LICENSE)
 
 ## 💫 Deploy
 
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/ChristineTham/hello-gatsby.git)
+[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/ChristineTham/hello-matui.git)
