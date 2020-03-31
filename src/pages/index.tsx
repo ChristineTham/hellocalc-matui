@@ -31,7 +31,7 @@ const mainFeaturedPost = {
   description:
     'What would the humble pocket calculator look like if it was reimagined as a modern serverless web app?',
   image: splash,
-  imgText: 'Calculator',
+  imageText: 'Calculator',
 }
 
 const features = [

@@ -121,7 +121,7 @@ export default function HelloBar() {
             className={classes.title}
             data-testid="app-title"
           >
-            Hello Tham
+            Hello Calculator
           </Typography>
           <Hidden smDown>
             <Button

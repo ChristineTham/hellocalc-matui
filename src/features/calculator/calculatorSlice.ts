@@ -26,6 +26,12 @@ const initialState: CalculatorState = {
   },
 }
 
+// Gets property of object
+// from https://mariusschulz.com/blog/keyof-and-lookup-types-in-typescript
+function prop<T, K extends keyof T>(obj: T, key: K) {
+  return obj[key]
+}
+
 const calculator = createSlice({
   name: 'calc',
   initialState,
@@ -71,15 +77,15 @@ const calculator = createSlice({
       state.stack.x = state.stack.y
       state.stack.y = temp
     },
-    unaryOp: (state, action: PayloadAction<string>): void => {
+    unaryOp: (state, action: PayloadAction<math.MathJsFunctionName>): void => {
       const x = math.bignumber(state.stack.x)
-      const operator = math[action.payload]
+      const operator = prop(math, action.payload)
       state.stack.x = operator(x).toString()
     },
-    binaryOp: (state, action: PayloadAction<string>): void => {
+    binaryOp: (state, action: PayloadAction<math.MathJsFunctionName>): void => {
       const x = math.bignumber(state.stack.x)
       const y = math.bignumber(state.stack.y)
-      const operator = math[action.payload]
+      const operator = prop(math, action.payload)
       state.stack.x = operator(y, x).toString()
       state.stack.y = state.stack.z
       state.stack.z = state.stack.t

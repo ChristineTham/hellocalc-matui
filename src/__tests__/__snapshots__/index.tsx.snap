@@ -11,6 +11,7 @@ Array [
     }
   >
     <img
+      alt="Calculator"
       src="test-file-stub"
       style={
         Object {
@@ -40,12 +41,6 @@ Array [
           >
             What would the humble pocket calculator look like if it was reimagined as a modern serverless web app?
           </p>
-          <a
-            className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-subtitle1 MuiTypography-colorPrimary"
-            href="#"
-            onBlur={[Function]}
-            onFocus={[Function]}
-          />
         </div>
       </div>
     </div>
@@ -54,7 +49,7 @@ Array [
     className="MuiContainer-root MuiContainer-maxWidthLg"
   >
     <div
-      className="MuiBox-root MuiBox-root-180"
+      className="MuiBox-root MuiBox-root-174"
     >
       <main
         className="MuiContainer-root MuiContainer-maxWidthMd"
@@ -69,7 +64,7 @@ Array [
               className="MuiPaper-root MuiCard-root MuiPaper-elevation1 MuiPaper-rounded"
             >
               <div
-                className="MuiCardHeader-root makeStyles-cardHeader-182"
+                className="MuiCardHeader-root makeStyles-cardHeader-176"
               >
                 <div
                   className="MuiCardHeader-content"
@@ -85,10 +80,10 @@ Array [
                 className="MuiCardContent-root"
               >
                 <div
-                  className="makeStyles-cardContent-183"
+                  className="makeStyles-cardContent-177"
                 >
                   <div
-                    className="MuiAvatar-root MuiAvatar-circle makeStyles-pink-184 MuiAvatar-colorDefault"
+                    className="MuiAvatar-root MuiAvatar-circle makeStyles-pink-178 MuiAvatar-colorDefault"
                   >
                     <svg
                       aria-hidden="true"
@@ -162,7 +157,7 @@ Array [
               className="MuiPaper-root MuiCard-root MuiPaper-elevation1 MuiPaper-rounded"
             >
               <div
-                className="MuiCardHeader-root makeStyles-cardHeader-182"
+                className="MuiCardHeader-root makeStyles-cardHeader-176"
               >
                 <div
                   className="MuiCardHeader-content"
@@ -178,10 +173,10 @@ Array [
                 className="MuiCardContent-root"
               >
                 <div
-                  className="makeStyles-cardContent-183"
+                  className="makeStyles-cardContent-177"
                 >
                   <div
-                    className="MuiAvatar-root MuiAvatar-circle makeStyles-pink-184 MuiAvatar-colorDefault"
+                    className="MuiAvatar-root MuiAvatar-circle makeStyles-pink-178 MuiAvatar-colorDefault"
                   >
                     <svg
                       aria-hidden="true"
@@ -255,7 +250,7 @@ Array [
               className="MuiPaper-root MuiCard-root MuiPaper-elevation1 MuiPaper-rounded"
             >
               <div
-                className="MuiCardHeader-root makeStyles-cardHeader-182"
+                className="MuiCardHeader-root makeStyles-cardHeader-176"
               >
                 <div
                   className="MuiCardHeader-content"
@@ -271,10 +266,10 @@ Array [
                 className="MuiCardContent-root"
               >
                 <div
-                  className="makeStyles-cardContent-183"
+                  className="makeStyles-cardContent-177"
                 >
                   <div
-                    className="MuiAvatar-root MuiAvatar-circle makeStyles-pink-184 MuiAvatar-colorDefault"
+                    className="MuiAvatar-root MuiAvatar-circle makeStyles-pink-178 MuiAvatar-colorDefault"
                   >
                     <svg
                       aria-hidden="true"
@@ -348,7 +343,7 @@ Array [
               className="MuiPaper-root MuiCard-root MuiPaper-elevation1 MuiPaper-rounded"
             >
               <div
-                className="MuiCardHeader-root makeStyles-cardHeader-182"
+                className="MuiCardHeader-root makeStyles-cardHeader-176"
               >
                 <div
                   className="MuiCardHeader-content"
@@ -364,10 +359,10 @@ Array [
                 className="MuiCardContent-root"
               >
                 <div
-                  className="makeStyles-cardContent-183"
+                  className="makeStyles-cardContent-177"
                 >
                   <div
-                    className="MuiAvatar-root MuiAvatar-circle makeStyles-pink-184 MuiAvatar-colorDefault"
+                    className="MuiAvatar-root MuiAvatar-circle makeStyles-pink-178 MuiAvatar-colorDefault"
                   >
                     <svg
                       aria-hidden="true"

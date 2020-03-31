@@ -1,3 +1,5 @@
+import { AnyAction } from 'redux'
+
 import input, {
   insertInput,
   deleteInput,
@@ -30,7 +32,7 @@ const cursorMiddle: InputState = {
 
 describe('input', () => {
   it('should handle initial state', () => {
-    expect(input(undefined, {})).toEqual(initialState)
+    expect(input(undefined, {} as AnyAction)).toEqual(initialState)
   })
 
   it('should handle insertInput', () => {

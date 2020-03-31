@@ -100,7 +100,7 @@ const OpKey: React.FC<OpKeyProps> = ({ op, children }: OpKeyProps) => {
 }
 
 type UnaryOpProps = {
-  op: string
+  op: math.MathJsFunctionName
   children: React.ReactNode
 }
 
@@ -130,7 +130,7 @@ const UnaryOpKey: React.FC<UnaryOpProps> = ({ op, children }: UnaryOpProps) => {
 }
 
 type BinaryOpProps = {
-  op: string
+  op: math.MathJsFunctionName
   children: React.ReactNode
 }
 

@@ -6,6 +6,6 @@ import HelloBar from '../components/HelloBar'
 test('Displays the correct title', () => {
   const { getByTestId } = render(<HelloBar />)
   // Assertion
-  expect(getByTestId('app-title')).toHaveTextContent('Hello Tham')
+  expect(getByTestId('app-title')).toHaveTextContent('Hello Calculator')
   // --> Test will pass
 })

@@ -1,10 +1,9 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import { makeStyles } from '@material-ui/core/styles';
-import Paper from '@material-ui/core/Paper';
-import Typography from '@material-ui/core/Typography';
-import Grid from '@material-ui/core/Grid';
-import Link from '@material-ui/core/Link';
+/* eslint-disable react/jsx-curly-brace-presence */
+import React from 'react'
+import { makeStyles } from '@material-ui/core/styles'
+import Paper from '@material-ui/core/Paper'
+import Typography from '@material-ui/core/Typography'
+import Grid from '@material-ui/core/Grid'
 
 const useStyles = makeStyles((theme) => ({
   mainFeaturedPost: {
@@ -33,36 +32,53 @@ const useStyles = makeStyles((theme) => ({
       paddingRight: 0,
     },
   },
-}));
+}))
 
-export default function MainFeaturedPost(props) {
-  const classes = useStyles();
-  const { post } = props;
+interface PostType {
+  post: {
+    image: string
+    imageText: string
+    title: string
+    description: string
+  }
+}
+
+const MainFeaturedPost: React.FC<PostType> = ({ post }: PostType) => {
+  const classes = useStyles()
 
   return (
-    <Paper className={classes.mainFeaturedPost} style={{ backgroundImage: `url(${post.image})` }}>
+    <Paper
+      className={classes.mainFeaturedPost}
+      style={{ backgroundImage: `url(${post.image})` }}
+    >
       {/* Increase the priority of the hero background image */}
-      {<img style={{ display: 'none' }} src={post.image} alt={post.imageText} />}
+      {
+        <img
+          style={{ display: 'none' }}
+          src={post.image}
+          alt={post.imageText}
+        />
+      }
       <div className={classes.overlay} />
       <Grid container>
         <Grid item md={6}>
           <div className={classes.mainFeaturedPostContent}>
-            <Typography component="h1" variant="h3" color="inherit" gutterBottom>
+            <Typography
+              component="h1"
+              variant="h3"
+              color="inherit"
+              gutterBottom
+            >
               {post.title}
             </Typography>
             <Typography variant="h5" color="inherit" paragraph>
               {post.description}
             </Typography>
-            <Link variant="subtitle1" href="#">
-              {post.linkText}
-            </Link>
           </div>
         </Grid>
       </Grid>
     </Paper>
-  );
+  )
 }
 
-MainFeaturedPost.propTypes = {
-  post: PropTypes.object,
-};
+export default MainFeaturedPost

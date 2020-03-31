@@ -53,7 +53,12 @@ const CalcScreen = () => {
             </SvgIcon>
           </ListItemIcon>
           <ListItemText>
-            <Typography variant={item.isinput ? 'h4' : 'h5'} align="right">
+            <Typography
+              variant={item.isinput ? 'h4' : 'h5'}
+              align="right"
+              display="block"
+              noWrap
+            >
               {item.value}
             </Typography>
           </ListItemText>
