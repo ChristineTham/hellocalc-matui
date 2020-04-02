@@ -1,14 +1,17 @@
 import * as React from 'react'
 import Grid from '@material-ui/core/Grid'
 import Button from '@material-ui/core/Button'
-import { SvgIcon } from '@material-ui/core'
+import Card from '@material-ui/core/Card'
+import CardContent from '@material-ui/core/CardContent'
+import CardHeader from '@material-ui/core/CardHeader'
+import SvgIcon from '@material-ui/core/SvgIcon'
 import { makeStyles } from '@material-ui/core/styles'
 import ClearIcon from '@material-ui/icons/HighlightOff'
 import StackIcon from '@material-ui/icons/Reorder'
 import ArrowDownwardIcon from '@material-ui/icons/ArrowDownward'
 import ArrowUpwardIcon from '@material-ui/icons/ArrowUpward'
-import SwapHorizIcon from '@material-ui/icons/SwapHoriz'
-import VerticalAlignTopIcon from '@material-ui/icons/VerticalAlignTop'
+// import SwapHorizIcon from '@material-ui/icons/SwapHoriz'
+import VerticalAlignBottomIcon from '@material-ui/icons/VerticalAlignBottom'
 import BackspaceIcon from '@material-ui/icons/Backspace'
 import { mdiAlphaXBox, mdiArrowRightBox } from '@mdi/js'
 import { useDispatch, useSelector } from 'react-redux'
@@ -19,10 +22,10 @@ import {
   insertInput,
   deleteInput,
   clearInput,
-  cursorLeft,
-  cursorRight,
-  cursorBegin,
-  cursorEnd,
+  // cursorLeft,
+  // cursorRight,
+  // cursorBegin,
+  // cursorEnd,
   changeSign,
 } from '../features/input/inputSlice'
 
@@ -48,8 +51,8 @@ const useStyles = makeStyles(() => ({
   },
   enterKey: {
     height: 40,
-    width: 136,
-    minWidth: 136,
+    width: 128,
+    minWidth: 128,
   },
 }))
 
@@ -63,7 +66,7 @@ const InputKey: React.FC<InputKeyProps> = ({ op, children }: InputKeyProps) => {
   const dispatch = useDispatch()
 
   return (
-    <Grid item xs={1}>
+    <Grid item>
       <Button
         className={classes.calcKey}
         variant="contained"
@@ -85,7 +88,7 @@ const OpKey: React.FC<OpKeyProps> = ({ op, children }: OpKeyProps) => {
   const dispatch = useDispatch()
 
   return (
-    <Grid item xs={1}>
+    <Grid item>
       <Button
         className={classes.calcKey}
         variant="contained"
@@ -110,7 +113,7 @@ const UnaryOpKey: React.FC<UnaryOpProps> = ({ op, children }: UnaryOpProps) => {
   const currInput = useSelector((state: RootState) => state.input.current)
 
   return (
-    <Grid item xs={1}>
+    <Grid item>
       <Button
         className={classes.calcKey}
         variant="contained"
@@ -143,7 +146,7 @@ const BinaryOpKey: React.FC<BinaryOpProps> = ({
   const currInput = useSelector((state: RootState) => state.input.current)
 
   return (
-    <Grid item xs={1}>
+    <Grid item>
       <Button
         className={classes.calcKey}
         variant="contained"
@@ -169,7 +172,7 @@ const EnterKey: React.FC = () => {
   const currInput = useSelector((state: RootState) => state.input.current)
 
   return (
-    <Grid item xs={1}>
+    <Grid item>
       <Button
         className={classes.enterKey}
         variant="contained"
@@ -182,7 +185,7 @@ const EnterKey: React.FC = () => {
         color="primary"
       >
         Enter
-        <VerticalAlignTopIcon />
+        <VerticalAlignBottomIcon />
       </Button>
     </Grid>
   )
@@ -190,108 +193,79 @@ const EnterKey: React.FC = () => {
 
 const CalcBasicKeyboard = () => {
   return (
-    <>
-      <Grid container spacing={1} xs>
-        <OpKey op={clearX}>
-          <ClearIcon />
-          <SvgIcon>
-            <path d={mdiAlphaXBox} />
-          </SvgIcon>
-        </OpKey>
-        <InputKey op="7">7</InputKey>
-        <InputKey op="8">8</InputKey>
-        <InputKey op="9">9</InputKey>
-        <BinaryOpKey op="divide">&divide;</BinaryOpKey>
-      </Grid>
-      <Grid container spacing={1} xs>
-        <OpKey op={clearStack}>
-          <ClearIcon />
-          <StackIcon />
-        </OpKey>
-        <InputKey op="4">4</InputKey>
-        <InputKey op="5">5</InputKey>
-        <InputKey op="6">6</InputKey>
-        <BinaryOpKey op="multiply">&times;</BinaryOpKey>
-      </Grid>
-      <Grid container spacing={1} xs>
-        <OpKey op={rollDown}>
-          <StackIcon />
-          <ArrowDownwardIcon />
-        </OpKey>
-        <InputKey op="1">1</InputKey>
-        <InputKey op="2">2</InputKey>
-        <InputKey op="3">3</InputKey>
-        <BinaryOpKey op="subtract">&minus;</BinaryOpKey>
-      </Grid>
-      <Grid container spacing={1} xs>
-        <OpKey op={rollUp}>
-          <StackIcon />
-          <ArrowUpwardIcon />
-        </OpKey>
-        <InputKey op="0">0</InputKey>
-        <InputKey op=".">.</InputKey>
-        <OpKey op={changeSign}>&plusmn;</OpKey>
-        <BinaryOpKey op="add">+</BinaryOpKey>
-      </Grid>
-      <Grid container spacing={1} xs>
-        <OpKey op={exchangeXY}>x&harr;y</OpKey>
-        <OpKey op={deleteInput}>
-          <BackspaceIcon />
-        </OpKey>
-        <OpKey op={clearInput}>
-          <ClearIcon />
-          <SvgIcon>
-            <path d={mdiArrowRightBox} />
-          </SvgIcon>
-        </OpKey>
-        <EnterKey />
-      </Grid>
-    </>
+    <Card>
+      <CardHeader title="Basic Functions" />
+      <CardContent>
+        <Grid container spacing={1} xs={12}>
+          <Grid item xs={12}>
+            <Grid container spacing={1} xs>
+              <OpKey op={clearX}>
+                <ClearIcon />
+                <SvgIcon>
+                  <path d={mdiAlphaXBox} />
+                </SvgIcon>
+              </OpKey>
+              <InputKey op="7">7</InputKey>
+              <InputKey op="8">8</InputKey>
+              <InputKey op="9">9</InputKey>
+              <BinaryOpKey op="divide">&divide;</BinaryOpKey>
+            </Grid>
+          </Grid>
+          <Grid item xs={12}>
+            <Grid container spacing={1} xs>
+              <OpKey op={clearStack}>
+                <ClearIcon />
+                <StackIcon />
+              </OpKey>
+              <InputKey op="4">4</InputKey>
+              <InputKey op="5">5</InputKey>
+              <InputKey op="6">6</InputKey>
+              <BinaryOpKey op="multiply">&times;</BinaryOpKey>
+            </Grid>
+          </Grid>
+          <Grid item xs={12}>
+            <Grid container spacing={1} xs>
+              <OpKey op={rollUp}>
+                <StackIcon />
+                <ArrowUpwardIcon />
+              </OpKey>
+              <InputKey op="1">1</InputKey>
+              <InputKey op="2">2</InputKey>
+              <InputKey op="3">3</InputKey>
+              <BinaryOpKey op="subtract">&minus;</BinaryOpKey>
+            </Grid>
+          </Grid>
+          <Grid item xs={12}>
+            <Grid container spacing={1} xs>
+              <OpKey op={rollDown}>
+                <StackIcon />
+                <ArrowDownwardIcon />
+              </OpKey>
+              <InputKey op="0">0</InputKey>
+              <InputKey op=".">.</InputKey>
+              <OpKey op={changeSign}>&plusmn;</OpKey>
+              <BinaryOpKey op="add">+</BinaryOpKey>
+            </Grid>
+          </Grid>
+          <Grid item xs={12}>
+            <Grid container spacing={1} xs>
+              <OpKey op={exchangeXY}>x&harr;y</OpKey>
+              <OpKey op={deleteInput}>
+                <BackspaceIcon />
+              </OpKey>
+              <OpKey op={clearInput}>
+                <ClearIcon />
+                <SvgIcon>
+                  <path d={mdiArrowRightBox} />
+                </SvgIcon>
+              </OpKey>
+              <EnterKey />
+            </Grid>
+          </Grid>
+        </Grid>
+      </CardContent>
+    </Card>
   )
 }
 
 export default CalcBasicKeyboard
-
-/*
-
-    <Stack horizontal tokens={stackTokens}>
-      <DefaultButton
-        text="x&harr;y"
-        onClick={() => dispatch(exchangeXY())}
-        styles={operationButtonStyles}
-      />
-      <Text>&nbsp;</Text>
-      <DefaultButton
-        onClick={() => dispatch(insertInput('*10^('))}
-        styles={numericButtonStyles}
-      >
-        &times;10
-      <sup>
-          <i>X</i>
-        </sup>
-      </DefaultButton>
-      <DefaultButton
-        text="Enter &crarr;"
-        onClick={() => {
-          if (currInput) {
-            dispatch(enterX(currInput))
-            dispatch(clearInput())
-          }
-        }}
-        styles={enterButtonStyles}
-      />
-      <DefaultButton
-        text="&larr;"
-        onClick={() => dispatch(deleteInput())}
-        styles={clearButtonStyles}
-      />
-      <DefaultButton
-        onClick={() => dispatch(clearInput())}
-        styles={clearButtonStyles}
-      >
-        {'\u21A4'}
-        </DefaultButton>
-    </Stack>
-  </Stack>
-)
-*/

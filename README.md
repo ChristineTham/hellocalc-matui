@@ -37,6 +37,30 @@ in [package.json](../package.json) file.
 
 This command will start the app
 
+#### 3. Run `yarn lc`
+
+This command will run type checking and check for formatting errors.
+
+#### 4. Run `yarn test`
+
+This command will run all unit tests using the Jest testing framework.
+
+#### 5. Run `yarn storybook`
+
+This command will start the Storybook server to view how the React components will render.
+
+#### 6. Run `gatsby build`
+
+This command will build a production build of the app that can be deployed as a set of static web pages.
+
+#### 7. Run `yarn outdated`
+
+This command will list which packages used by the app need refreshing.
+
+#### 8. Run `yarn upgrade --latest`
+
+This command will upgrade all outdated packages. Today is your lucky day!
+
 ## License
 
 [MIT](https://github.com/ChristineTham/hellocalc-matui/raw/master/LICENSE)

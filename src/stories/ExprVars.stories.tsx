@@ -2,9 +2,16 @@ import React from 'react'
 import { storiesOf } from '@storybook/react'
 import { muiTheme } from 'storybook-addon-material-ui'
 import { createMuiTheme } from '@material-ui/core/styles'
-import { mdiCalculator } from '@mdi/js'
+import { Provider } from 'react-redux'
+import { configureStore } from '@reduxjs/toolkit'
+import Grid from '@material-ui/core/Grid'
 
-import CalcFeature from '../components/CardFeature'
+import rootReducer from '../rootReducer'
+import ExprVars from '../components/ExprVars'
+
+const store = configureStore({
+  reducer: rootReducer,
+})
 
 const theme = createMuiTheme({
   palette: {
@@ -23,14 +30,11 @@ const theme = createMuiTheme({
   },
 })
 
-storiesOf('CalcFeature', module)
+storiesOf('ExprVars', module)
   .addDecorator(muiTheme([theme]))
-  .add('Example', () => (
-    <CalcFeature
-      title="Sample Title"
-      icon={mdiCalculator}
-      description={['line1', 'line 2', 'line 3']}
-      buttonTitle="button"
-      target="/"
-    />
+  .addDecorator((story) => <Provider store={store}>{story()}</Provider>)
+  .add('Default', () => (
+    <Grid item xs={12} md={6} spacing={1}>
+      <ExprVars />
+    </Grid>
   ))

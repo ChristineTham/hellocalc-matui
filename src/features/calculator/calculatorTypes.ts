@@ -12,12 +12,12 @@ export enum OutputFormat {
   All = 'ALL',
   Fixed = 'FIX',
   Scientific = 'SCI',
-  Enginerring = 'ENG',
+  Engineering = 'ENG',
 }
 
 export enum AngleMeasure {
   Degree = 'Deg',
-  Radian = 'Rad',
+  Radian = 'Radian',
   Grad = 'Grad',
 }
 
@@ -33,19 +33,4 @@ export enum NumberBase {
   Octal,
   Binary,
   BaseN,
-}
-
-export type CalculatorState = {
-  numberType: NumberType
-  outputFormat: OutputFormat
-  angleMeasure: AngleMeasure
-  coordinateSystem: CoordinateSystem
-  numberBase: NumberBase
-  precision: number
-  stack: {
-    x: string
-    y: string
-    z: string
-    t: string
-  }
 }

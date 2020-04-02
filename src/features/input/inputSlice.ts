@@ -17,6 +17,11 @@ const input = createSlice({
   name: 'input',
   initialState,
   reducers: {
+    replaceInput: (state, action: PayloadAction<string>): void => {
+      state.current = action.payload
+      state.lenLast = action.payload.length
+      state.cursor = state.current.length
+    },
     insertInput: (state, action: PayloadAction<string>): void => {
       if (state.current && state.cursor < state.current.length) {
         state.current =
@@ -82,6 +87,7 @@ const input = createSlice({
 })
 
 export const {
+  replaceInput,
   insertInput,
   deleteInput,
   clearInput,

@@ -2,9 +2,8 @@ import React from 'react'
 import { storiesOf } from '@storybook/react'
 import { muiTheme } from 'storybook-addon-material-ui'
 import { createMuiTheme } from '@material-ui/core/styles'
-import { mdiCalculator } from '@mdi/js'
 
-import CalcFeature from '../components/CardFeature'
+import ExprResult from '../components/ExprResult'
 
 const theme = createMuiTheme({
   palette: {
@@ -23,14 +22,8 @@ const theme = createMuiTheme({
   },
 })
 
-storiesOf('CalcFeature', module)
+storiesOf('CalcResult', module)
   .addDecorator(muiTheme([theme]))
   .add('Example', () => (
-    <CalcFeature
-      title="Sample Title"
-      icon={mdiCalculator}
-      description={['line1', 'line 2', 'line 3']}
-      buttonTitle="button"
-      target="/"
-    />
+    <ExprResult resulttype="Evaluate" input="1+2" output="3" />
   ))
