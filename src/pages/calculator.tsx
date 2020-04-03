@@ -13,16 +13,22 @@ const Calculator: React.FC = () => (
     <CssBaseline />
     <Container maxWidth={false} disableGutters={false}>
       <Grid container spacing={2}>
-        <Grid container spacing={2} xs={12} md={6}>
-          <Grid item xs={12}>
-            <CalcInput />
-          </Grid>
-          <Grid item xs={12}>
-            <CalcScreen />
+        <Grid item xs={12} md={6}>
+          <Grid container spacing={2} xs={12}>
+            <Grid item xs={12}>
+              <CalcInput />
+            </Grid>
+            <Grid item xs={12}>
+              <CalcScreen />
+            </Grid>
           </Grid>
         </Grid>
         <Grid item xs={12} md={6}>
-          <CalcBasicKeyboard />
+          <Grid container spacing={2} xs={12}>
+            <Grid item xs={12}>
+              <CalcBasicKeyboard />
+            </Grid>
+          </Grid>
         </Grid>
       </Grid>
     </Container>

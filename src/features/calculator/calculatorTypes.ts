@@ -1,30 +1,30 @@
 export enum NumberType {
-  number,
-  BigNumber,
-  Fraction,
-  Complex,
-  Matrix,
-  Unit,
+  number = 'number',
+  BigNumber = 'BigNumber',
+  Fraction = 'Fraction',
+  Complex = 'Complex',
+  Matrix = 'Matrix',
+  Unit = 'Unit',
 }
 
 export enum OutputFormat {
-  Standard = 'STD',
-  All = 'ALL',
-  Fixed = 'FIX',
-  Scientific = 'SCI',
-  Engineering = 'ENG',
+  Standard = 'Standard',
+  All = 'All',
+  Fixed = 'Fixed',
+  Scientific = 'Scientific',
+  Engineering = 'Engineering',
 }
 
 export enum AngleMeasure {
-  Degree = 'Deg',
+  Degree = 'Degree',
   Radian = 'Radian',
   Grad = 'Grad',
 }
 
 export enum CoordinateSystem {
-  Rectangular,
-  Polar,
-  Spherical,
+  Rectangular = 'Rectangular',
+  Polar = 'Polar',
+  Spherical = 'Spherical',
 }
 
 export enum NumberBase {

@@ -3,65 +3,65 @@ import { useSelector } from 'react-redux'
 import Card from '@material-ui/core/Card'
 import CardContent from '@material-ui/core/CardContent'
 import CardHeader from '@material-ui/core/CardHeader'
+import Chip from '@material-ui/core/Chip'
 import List from '@material-ui/core/List'
 import ListItem from '@material-ui/core/ListItem'
 import ListItemIcon from '@material-ui/core/ListItemIcon'
 import ListItemText from '@material-ui/core/ListItemText'
+import Tooltip from '@material-ui/core/Tooltip'
 import Typography from '@material-ui/core/Typography'
 import { mdiAlphaXBox, mdiAlphaYBox, mdiAlphaZBox, mdiAlphaTBox } from '@mdi/js'
 import { SvgIcon } from '@material-ui/core'
 
 import { RootState } from '../rootReducer'
 
+type CalcModeProps = {
+  label: string
+  tooltip: string
+}
+
+const CalcMode = ({ label, tooltip }: CalcModeProps) => (
+  <>
+    <Tooltip title={tooltip} arrow >
+      <Chip label={label} size="small" />
+    </Tooltip>
+    &nbsp;
+  </>
+)
+
 const CalcScreen = () => {
-  const currStack = useSelector((state: RootState) => state.calculator.stack)
-  const stack = [
-    // {
-    //   icon: mdiArrowRightBox,
-    //   value: currInput || '0',
-    //   isinput: true,
-    // },
-    {
-      icon: mdiAlphaXBox,
-      value: currStack[0],
-    },
-    {
-      icon: mdiAlphaYBox,
-      value: currStack[1],
-    },
-    {
-      icon: mdiAlphaZBox,
-      value: currStack[2],
-    },
-    {
-      icon: mdiAlphaTBox,
-      value: currStack[3],
-    },
-  ]
+  const c = useSelector((state: RootState) => state.calculator)
+  const stackIcon = [mdiAlphaXBox, mdiAlphaYBox, mdiAlphaZBox, mdiAlphaTBox]
+
   return (
-    <>
-      <Card>
-        <CardHeader title="Results" />
-        <CardContent>
-          <List>
-            {stack.map((item) => (
-              <ListItem key={item.icon} divider>
-                <ListItemIcon>
-                  <SvgIcon>
-                    <path d={item.icon} />
-                  </SvgIcon>
-                </ListItemIcon>
-                <ListItemText>
-                  <Typography variant="h6" align="right" display="block" noWrap>
-                    {item.value}
-                  </Typography>
-                </ListItemText>
-              </ListItem>
-            ))}
-          </List>
-        </CardContent>
-      </Card>
-    </>
+    <Card>
+      <CardHeader title="Results" />
+      <CardContent>
+        <CalcMode label={c.numberType as string} tooltip="Calculation Type" />
+        <CalcMode label={c.outputFormat as string} tooltip="Output Format" />
+        <CalcMode label={c.angleMeasure as string} tooltip="Angle Measure" />
+        <CalcMode
+          label={c.coordinateSystem as string}
+          tooltip="Coordinate System"
+        />
+        <List>
+          {c.stack.map((item, i) => (
+            <ListItem key={i.toString()} divider>
+              <ListItemIcon>
+                <SvgIcon>
+                  <path d={stackIcon[i]} />
+                </SvgIcon>
+              </ListItemIcon>
+              <ListItemText>
+                <Typography variant="h6" align="right" display="block" noWrap>
+                  {item}
+                </Typography>
+              </ListItemText>
+            </ListItem>
+          ))}
+        </List>
+      </CardContent>
+    </Card>
   )
 }
 
