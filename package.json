@@ -59,7 +59,7 @@
     "gatsby-theme-material-ui": "^1.0.8",
     "gatsby-transformer-sharp": "^2.4.3",
     "material-table": "^1.57.2",
-    "mathjs": "^6.6.2",
+    "mathjs": "^7.5.1",
     "modern-normalize": "^0.6.0",
     "normalize.css": "^8.0.1",
     "polished": "^3.5.1",
