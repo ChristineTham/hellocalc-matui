@@ -11,7 +11,6 @@ import calculator, {
   unaryOp,
   binaryOp,
   initialState,
-
 } from '../features/calculator/calculatorSlice'
 
 describe('calculator', () => {

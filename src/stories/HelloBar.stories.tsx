@@ -1,11 +1,11 @@
 import React from 'react'
+import CssBaseline from '@mui/material/CssBaseline'
 import { storiesOf } from '@storybook/react'
-import { muiTheme } from 'storybook-addon-material-ui'
-import { createMuiTheme } from '@material-ui/core/styles'
+import { createTheme, ThemeProvider } from '@mui/material/styles'
 
 import HelloBar from '../components/HelloBar'
 
-const theme = createMuiTheme({
+const theme = createTheme({
   palette: {
     primary: {
       main: '#660099',
@@ -23,5 +23,5 @@ const theme = createMuiTheme({
 })
 
 storiesOf('HelloBar', module)
-  .addDecorator(muiTheme([theme]))
+  .addDecorator((story) => <ThemeProvider theme={theme}><CssBaseline />{story()}</ThemeProvider>)
   .add('Default', () => <HelloBar />)

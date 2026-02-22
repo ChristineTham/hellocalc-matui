@@ -1,17 +1,17 @@
 import * as React from 'react'
 import { useSelector } from 'react-redux'
-import Card from '@material-ui/core/Card'
-import CardContent from '@material-ui/core/CardContent'
-import CardHeader from '@material-ui/core/CardHeader'
-import Chip from '@material-ui/core/Chip'
-import List from '@material-ui/core/List'
-import ListItem from '@material-ui/core/ListItem'
-import ListItemIcon from '@material-ui/core/ListItemIcon'
-import ListItemText from '@material-ui/core/ListItemText'
-import Tooltip from '@material-ui/core/Tooltip'
-import Typography from '@material-ui/core/Typography'
+import Card from '@mui/material/Card'
+import CardContent from '@mui/material/CardContent'
+import CardHeader from '@mui/material/CardHeader'
+import Chip from '@mui/material/Chip'
+import List from '@mui/material/List'
+import ListItem from '@mui/material/ListItem'
+import ListItemIcon from '@mui/material/ListItemIcon'
+import ListItemText from '@mui/material/ListItemText'
+import Tooltip from '@mui/material/Tooltip'
+import Typography from '@mui/material/Typography'
 import { mdiAlphaXBox, mdiAlphaYBox, mdiAlphaZBox, mdiAlphaTBox } from '@mdi/js'
-import { SvgIcon } from '@material-ui/core'
+import { SvgIcon } from '@mui/material'
 
 import { RootState } from '../rootReducer'
 
@@ -22,7 +22,7 @@ type CalcModeProps = {
 
 const CalcMode = ({ label, tooltip }: CalcModeProps) => (
   <>
-    <Tooltip title={tooltip} arrow >
+    <Tooltip title={tooltip} arrow>
       <Chip label={label} size="small" />
     </Tooltip>
     &nbsp;

@@ -1,11 +1,11 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Index renders correctly 1`] = `
-Array [
+[
   <div
-    className="MuiPaper-root makeStyles-mainFeaturedPost-1 MuiPaper-elevation1 MuiPaper-rounded"
+    className="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-1mzjxcv-MuiPaper-root-mainFeaturedPost"
     style={
-      Object {
+      {
         "backgroundImage": "url(test-file-stub)",
       }
     }
@@ -14,30 +14,30 @@ Array [
       alt="Calculator"
       src="test-file-stub"
       style={
-        Object {
+        {
           "display": "none",
         }
       }
     />
     <div
-      className="makeStyles-overlay-2"
+      className="css-juny23-overlay"
     />
     <div
-      className="MuiGrid-root MuiGrid-container"
+      className="MuiGrid-root MuiGrid-container css-11lq3yg-MuiGrid-root"
     >
       <div
-        className="MuiGrid-root MuiGrid-item MuiGrid-grid-md-6"
+        className="MuiGrid-root MuiGrid-item MuiGrid-grid-md-6 css-1k7sk4d-MuiGrid-root"
       >
         <div
-          className="makeStyles-mainFeaturedPostContent-3"
+          className="css-17zg0mh-mainFeaturedPostContent"
         >
           <h1
-            className="MuiTypography-root MuiTypography-h3 MuiTypography-colorInherit MuiTypography-gutterBottom"
+            className="MuiTypography-root MuiTypography-h3 MuiTypography-gutterBottom css-1007tex-MuiTypography-root"
           >
             The Calculator ... Reimagined
           </h1>
           <p
-            className="MuiTypography-root MuiTypography-h5 MuiTypography-colorInherit MuiTypography-paragraph"
+            className="MuiTypography-root MuiTypography-h5 MuiTypography-paragraph css-187jqjf-MuiTypography-root"
           >
             What would the humble pocket calculator look like if it was reimagined as a modern serverless web app?
           </p>
@@ -46,51 +46,51 @@ Array [
     </div>
   </div>,
   <div
-    className="MuiContainer-root MuiContainer-maxWidthLg"
+    className="MuiContainer-root MuiContainer-maxWidthLg css-1oqqzyl-MuiContainer-root"
   >
     <div
-      className="MuiBox-root MuiBox-root-174"
+      className="MuiBox-root css-19midj6"
     >
       <main
-        className="MuiContainer-root MuiContainer-maxWidthMd"
+        className="MuiContainer-root MuiContainer-maxWidthMd css-xdmu94-MuiContainer-root"
       >
         <div
-          className="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-5 MuiGrid-align-items-xs-center"
+          className="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-5 css-gpa0ei-MuiGrid-root"
         >
           <div
-            className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-6 MuiGrid-grid-md-3"
+            className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-6 MuiGrid-grid-md-3 css-10voxkt-MuiGrid-root"
           >
             <div
-              className="MuiPaper-root MuiCard-root MuiPaper-elevation1 MuiPaper-rounded"
+              className="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root css-bhp9pd-MuiPaper-root-MuiCard-root"
             >
               <div
-                className="MuiCardHeader-root makeStyles-cardHeader-176"
+                className="MuiCardHeader-root css-1njolgq-MuiCardHeader-root-cardHeader"
               >
                 <div
-                  className="MuiCardHeader-content"
+                  className="MuiCardHeader-content css-1qbkelo-MuiCardHeader-content"
                 >
                   <span
-                    className="MuiTypography-root MuiCardHeader-title MuiTypography-h5 MuiTypography-alignCenter MuiTypography-displayBlock"
+                    className="MuiTypography-root MuiTypography-h5 MuiTypography-alignCenter MuiCardHeader-title css-1l8qytf-MuiTypography-root"
                   >
                     Calculator
                   </span>
                 </div>
               </div>
               <div
-                className="MuiCardContent-root"
+                className="MuiCardContent-root css-46bh2p-MuiCardContent-root"
               >
                 <div
-                  className="makeStyles-cardContent-177"
+                  className="css-191gaml-cardContent"
                 >
                   <div
-                    className="MuiAvatar-root MuiAvatar-circle makeStyles-pink-178 MuiAvatar-colorDefault"
+                    className="MuiAvatar-root MuiAvatar-circular MuiAvatar-colorDefault css-jn7sxx-MuiAvatar-root-pink"
                   >
                     <svg
-                      aria-hidden="true"
-                      className="MuiSvgIcon-root"
+                      aria-hidden={true}
+                      className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
                       focusable="false"
                       style={
-                        Object {
+                        {
                           "fontSize": 64,
                         }
                       }
@@ -104,30 +104,31 @@ Array [
                 </div>
                 <ul>
                   <li
-                    className="MuiTypography-root MuiTypography-subtitle1 MuiTypography-alignCenter"
+                    className="MuiTypography-root MuiTypography-subtitle1 MuiTypography-alignCenter css-118o8hd-MuiTypography-root"
                   >
                     RPN logic
                   </li>
                   <li
-                    className="MuiTypography-root MuiTypography-subtitle1 MuiTypography-alignCenter"
+                    className="MuiTypography-root MuiTypography-subtitle1 MuiTypography-alignCenter css-118o8hd-MuiTypography-root"
                   >
                     Calculator Keyboard
                   </li>
                   <li
-                    className="MuiTypography-root MuiTypography-subtitle1 MuiTypography-alignCenter"
+                    className="MuiTypography-root MuiTypography-subtitle1 MuiTypography-alignCenter css-118o8hd-MuiTypography-root"
                   >
                     Stack History
                   </li>
                 </ul>
               </div>
               <div
-                className="MuiCardActions-root MuiCardActions-spacing"
+                className="MuiCardActions-root MuiCardActions-spacing css-dnrpxu-MuiCardActions-root"
               >
                 <button
-                  className="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-fullWidth"
+                  className="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-colorPrimary MuiButton-fullWidth MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-colorPrimary MuiButton-fullWidth css-1fu7jd5-MuiButtonBase-root-MuiButton-root"
                   disabled={false}
                   onBlur={[Function]}
                   onClick={[Function]}
+                  onContextMenu={[Function]}
                   onDragLeave={[Function]}
                   onFocus={[Function]}
                   onKeyDown={[Function]}
@@ -141,86 +142,83 @@ Array [
                   tabIndex={0}
                   type="button"
                 >
-                  <span
-                    className="MuiButton-label"
-                  >
-                    Calculator
-                  </span>
+                  Calculator
                 </button>
               </div>
             </div>
           </div>
           <div
-            className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-6 MuiGrid-grid-md-3"
+            className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-6 MuiGrid-grid-md-3 css-10voxkt-MuiGrid-root"
           >
             <div
-              className="MuiPaper-root MuiCard-root MuiPaper-elevation1 MuiPaper-rounded"
+              className="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root css-bhp9pd-MuiPaper-root-MuiCard-root"
             >
               <div
-                className="MuiCardHeader-root makeStyles-cardHeader-176"
+                className="MuiCardHeader-root css-1njolgq-MuiCardHeader-root-cardHeader"
               >
                 <div
-                  className="MuiCardHeader-content"
+                  className="MuiCardHeader-content css-1qbkelo-MuiCardHeader-content"
                 >
                   <span
-                    className="MuiTypography-root MuiCardHeader-title MuiTypography-h5 MuiTypography-alignCenter MuiTypography-displayBlock"
+                    className="MuiTypography-root MuiTypography-h5 MuiTypography-alignCenter MuiCardHeader-title css-1l8qytf-MuiTypography-root"
                   >
                     Expression
                   </span>
                 </div>
               </div>
               <div
-                className="MuiCardContent-root"
+                className="MuiCardContent-root css-46bh2p-MuiCardContent-root"
               >
                 <div
-                  className="makeStyles-cardContent-177"
+                  className="css-191gaml-cardContent"
                 >
                   <div
-                    className="MuiAvatar-root MuiAvatar-circle makeStyles-pink-178 MuiAvatar-colorDefault"
+                    className="MuiAvatar-root MuiAvatar-circular MuiAvatar-colorDefault css-jn7sxx-MuiAvatar-root-pink"
                   >
                     <svg
-                      aria-hidden="true"
-                      className="MuiSvgIcon-root"
+                      aria-hidden={true}
+                      className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
                       focusable="false"
                       style={
-                        Object {
+                        {
                           "fontSize": 64,
                         }
                       }
                       viewBox="0 0 24 24"
                     >
                       <path
-                        d="M9,2H4A2,2 0 0,0 2,4V9A2,2 0 0,0 4,11H9A2,2 0 0,0 11,9V4A2,2 0 0,0 9,2M9,7H4V6H9V7M20,13H15A2,2 0 0,0 13,15V20A2,2 0 0,0 15,22H20A2,2 0 0,0 22,20V15A2,2 0 0,0 20,13M20,19H15V18H20V19M20,17H15V16H20V17M20,2H15A2,2 0 0,0 13,4V9A2,2 0 0,0 15,11H20A2,2 0 0,0 22,9V4A2,2 0 0,0 20,2M20,7H18V9H17V7H15V6H17V4H18V6H20V7M9,13H4A2,2 0 0,0 2,15V20A2,2 0 0,0 4,22H9A2,2 0 0,0 11,20V15A2,2 0 0,0 9,13M8.62,18.91L7.91,19.62L6.5,18.21L5.09,19.62L4.38,18.91L5.79,17.5L4.38,16.09L5.09,15.38L6.5,16.79L7.91,15.38L8.62,16.09L7.21,17.5L8.62,18.91Z"
+                        d="M19 3H5C3.9 3 3 3.9 3 5V19C3 20.1 3.9 21 5 21H19C20.1 21 21 20.1 21 19V5C21 3.9 20.1 3 19 3M13 7.1L14.1 6L15.5 7.4L16.9 6L18 7.1L16.6 8.5L18 9.9L16.9 11L15.5 9.6L14.1 11L13 9.9L14.4 8.5L13 7.1M6.2 7.7H11.2V9.2H6.2V7.7M11.5 16H9.5V18H8V16H6V14.5H8V12.5H9.5V14.5H11.5V16M18 17.2H13V15.7H18V17.2M18 14.8H13V13.3H18V14.8Z"
                       />
                     </svg>
                   </div>
                 </div>
                 <ul>
                   <li
-                    className="MuiTypography-root MuiTypography-subtitle1 MuiTypography-alignCenter"
+                    className="MuiTypography-root MuiTypography-subtitle1 MuiTypography-alignCenter css-118o8hd-MuiTypography-root"
                   >
                     Evaluate formula
                   </li>
                   <li
-                    className="MuiTypography-root MuiTypography-subtitle1 MuiTypography-alignCenter"
+                    className="MuiTypography-root MuiTypography-subtitle1 MuiTypography-alignCenter css-118o8hd-MuiTypography-root"
                   >
                     History
                   </li>
                   <li
-                    className="MuiTypography-root MuiTypography-subtitle1 MuiTypography-alignCenter"
+                    className="MuiTypography-root MuiTypography-subtitle1 MuiTypography-alignCenter css-118o8hd-MuiTypography-root"
                   >
                     Variables
                   </li>
                 </ul>
               </div>
               <div
-                className="MuiCardActions-root MuiCardActions-spacing"
+                className="MuiCardActions-root MuiCardActions-spacing css-dnrpxu-MuiCardActions-root"
               >
                 <button
-                  className="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-fullWidth"
+                  className="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-colorPrimary MuiButton-fullWidth MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-colorPrimary MuiButton-fullWidth css-1fu7jd5-MuiButtonBase-root-MuiButton-root"
                   disabled={false}
                   onBlur={[Function]}
                   onClick={[Function]}
+                  onContextMenu={[Function]}
                   onDragLeave={[Function]}
                   onFocus={[Function]}
                   onKeyDown={[Function]}
@@ -234,49 +232,45 @@ Array [
                   tabIndex={0}
                   type="button"
                 >
-                  <span
-                    className="MuiButton-label"
-                  >
-                    Expression
-                  </span>
+                  Expression
                 </button>
               </div>
             </div>
           </div>
           <div
-            className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-6 MuiGrid-grid-md-3"
+            className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-6 MuiGrid-grid-md-3 css-10voxkt-MuiGrid-root"
           >
             <div
-              className="MuiPaper-root MuiCard-root MuiPaper-elevation1 MuiPaper-rounded"
+              className="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root css-bhp9pd-MuiPaper-root-MuiCard-root"
             >
               <div
-                className="MuiCardHeader-root makeStyles-cardHeader-176"
+                className="MuiCardHeader-root css-1njolgq-MuiCardHeader-root-cardHeader"
               >
                 <div
-                  className="MuiCardHeader-content"
+                  className="MuiCardHeader-content css-1qbkelo-MuiCardHeader-content"
                 >
                   <span
-                    className="MuiTypography-root MuiCardHeader-title MuiTypography-h5 MuiTypography-alignCenter MuiTypography-displayBlock"
+                    className="MuiTypography-root MuiTypography-h5 MuiTypography-alignCenter MuiCardHeader-title css-1l8qytf-MuiTypography-root"
                   >
                     Graph
                   </span>
                 </div>
               </div>
               <div
-                className="MuiCardContent-root"
+                className="MuiCardContent-root css-46bh2p-MuiCardContent-root"
               >
                 <div
-                  className="makeStyles-cardContent-177"
+                  className="css-191gaml-cardContent"
                 >
                   <div
-                    className="MuiAvatar-root MuiAvatar-circle makeStyles-pink-178 MuiAvatar-colorDefault"
+                    className="MuiAvatar-root MuiAvatar-circular MuiAvatar-colorDefault css-jn7sxx-MuiAvatar-root-pink"
                   >
                     <svg
-                      aria-hidden="true"
-                      className="MuiSvgIcon-root"
+                      aria-hidden={true}
+                      className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
                       focusable="false"
                       style={
-                        Object {
+                        {
                           "fontSize": 64,
                         }
                       }
@@ -290,30 +284,31 @@ Array [
                 </div>
                 <ul>
                   <li
-                    className="MuiTypography-root MuiTypography-subtitle1 MuiTypography-alignCenter"
+                    className="MuiTypography-root MuiTypography-subtitle1 MuiTypography-alignCenter css-118o8hd-MuiTypography-root"
                   >
                     Graph functions
                   </li>
                   <li
-                    className="MuiTypography-root MuiTypography-subtitle1 MuiTypography-alignCenter"
+                    className="MuiTypography-root MuiTypography-subtitle1 MuiTypography-alignCenter css-118o8hd-MuiTypography-root"
                   >
                     Flexible
                   </li>
                   <li
-                    className="MuiTypography-root MuiTypography-subtitle1 MuiTypography-alignCenter"
+                    className="MuiTypography-root MuiTypography-subtitle1 MuiTypography-alignCenter css-118o8hd-MuiTypography-root"
                   >
                     Cute
                   </li>
                 </ul>
               </div>
               <div
-                className="MuiCardActions-root MuiCardActions-spacing"
+                className="MuiCardActions-root MuiCardActions-spacing css-dnrpxu-MuiCardActions-root"
               >
                 <button
-                  className="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-fullWidth"
+                  className="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-colorPrimary MuiButton-fullWidth MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-colorPrimary MuiButton-fullWidth css-1fu7jd5-MuiButtonBase-root-MuiButton-root"
                   disabled={false}
                   onBlur={[Function]}
                   onClick={[Function]}
+                  onContextMenu={[Function]}
                   onDragLeave={[Function]}
                   onFocus={[Function]}
                   onKeyDown={[Function]}
@@ -327,49 +322,45 @@ Array [
                   tabIndex={0}
                   type="button"
                 >
-                  <span
-                    className="MuiButton-label"
-                  >
-                    Graph
-                  </span>
+                  Graph
                 </button>
               </div>
             </div>
           </div>
           <div
-            className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-6 MuiGrid-grid-md-3"
+            className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-6 MuiGrid-grid-md-3 css-10voxkt-MuiGrid-root"
           >
             <div
-              className="MuiPaper-root MuiCard-root MuiPaper-elevation1 MuiPaper-rounded"
+              className="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root css-bhp9pd-MuiPaper-root-MuiCard-root"
             >
               <div
-                className="MuiCardHeader-root makeStyles-cardHeader-176"
+                className="MuiCardHeader-root css-1njolgq-MuiCardHeader-root-cardHeader"
               >
                 <div
-                  className="MuiCardHeader-content"
+                  className="MuiCardHeader-content css-1qbkelo-MuiCardHeader-content"
                 >
                   <span
-                    className="MuiTypography-root MuiCardHeader-title MuiTypography-h5 MuiTypography-alignCenter MuiTypography-displayBlock"
+                    className="MuiTypography-root MuiTypography-h5 MuiTypography-alignCenter MuiCardHeader-title css-1l8qytf-MuiTypography-root"
                   >
                     Block
                   </span>
                 </div>
               </div>
               <div
-                className="MuiCardContent-root"
+                className="MuiCardContent-root css-46bh2p-MuiCardContent-root"
               >
                 <div
-                  className="makeStyles-cardContent-177"
+                  className="css-191gaml-cardContent"
                 >
                   <div
-                    className="MuiAvatar-root MuiAvatar-circle makeStyles-pink-178 MuiAvatar-colorDefault"
+                    className="MuiAvatar-root MuiAvatar-circular MuiAvatar-colorDefault css-jn7sxx-MuiAvatar-root-pink"
                   >
                     <svg
-                      aria-hidden="true"
-                      className="MuiSvgIcon-root"
+                      aria-hidden={true}
+                      className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
                       focusable="false"
                       style={
-                        Object {
+                        {
                           "fontSize": 64,
                         }
                       }
@@ -383,30 +374,31 @@ Array [
                 </div>
                 <ul>
                   <li
-                    className="MuiTypography-root MuiTypography-subtitle1 MuiTypography-alignCenter"
+                    className="MuiTypography-root MuiTypography-subtitle1 MuiTypography-alignCenter css-118o8hd-MuiTypography-root"
                   >
                     Evaluate Block
                   </li>
                   <li
-                    className="MuiTypography-root MuiTypography-subtitle1 MuiTypography-alignCenter"
+                    className="MuiTypography-root MuiTypography-subtitle1 MuiTypography-alignCenter css-118o8hd-MuiTypography-root"
                   >
                     Scope
                   </li>
                   <li
-                    className="MuiTypography-root MuiTypography-subtitle1 MuiTypography-alignCenter"
+                    className="MuiTypography-root MuiTypography-subtitle1 MuiTypography-alignCenter css-118o8hd-MuiTypography-root"
                   >
                     List
                   </li>
                 </ul>
               </div>
               <div
-                className="MuiCardActions-root MuiCardActions-spacing"
+                className="MuiCardActions-root MuiCardActions-spacing css-dnrpxu-MuiCardActions-root"
               >
                 <button
-                  className="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-fullWidth"
+                  className="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-colorPrimary MuiButton-fullWidth MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-colorPrimary MuiButton-fullWidth css-1fu7jd5-MuiButtonBase-root-MuiButton-root"
                   disabled={false}
                   onBlur={[Function]}
                   onClick={[Function]}
+                  onContextMenu={[Function]}
                   onDragLeave={[Function]}
                   onFocus={[Function]}
                   onKeyDown={[Function]}
@@ -420,11 +412,7 @@ Array [
                   tabIndex={0}
                   type="button"
                 >
-                  <span
-                    className="MuiButton-label"
-                  >
-                    Graph
-                  </span>
+                  Graph
                 </button>
               </div>
             </div>
@@ -433,7 +421,7 @@ Array [
       </main>
     </div>
     <p
-      className="MuiTypography-root MuiTypography-body2 MuiTypography-colorTextSecondary MuiTypography-alignCenter"
+      className="MuiTypography-root MuiTypography-body2 MuiTypography-alignCenter css-1vl95ex-MuiTypography-root"
     >
       Copyright © 
       <a
@@ -442,7 +430,7 @@ Array [
         Hello Tham Pty Ltd
       </a>
        
-      2020
+      2026
       .
     </p>
   </div>,

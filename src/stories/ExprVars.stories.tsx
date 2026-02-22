@@ -1,10 +1,10 @@
 import React from 'react'
+import CssBaseline from '@mui/material/CssBaseline'
 import { storiesOf } from '@storybook/react'
-import { muiTheme } from 'storybook-addon-material-ui'
-import { createMuiTheme } from '@material-ui/core/styles'
+import { createTheme, ThemeProvider } from '@mui/material/styles'
 import { Provider } from 'react-redux'
 import { configureStore } from '@reduxjs/toolkit'
-import Grid from '@material-ui/core/Grid'
+import Grid from '@mui/material/Grid'
 
 import rootReducer from '../rootReducer'
 import ExprVars from '../components/ExprVars'
@@ -13,7 +13,7 @@ const store = configureStore({
   reducer: rootReducer,
 })
 
-const theme = createMuiTheme({
+const theme = createTheme({
   palette: {
     primary: {
       main: '#660099',
@@ -31,7 +31,7 @@ const theme = createMuiTheme({
 })
 
 storiesOf('ExprVars', module)
-  .addDecorator(muiTheme([theme]))
+  .addDecorator((story) => <ThemeProvider theme={theme}><CssBaseline />{story()}</ThemeProvider>)
   .addDecorator((story) => <Provider store={store}>{story()}</Provider>)
   .add('Default', () => (
     <Grid item xs={12} md={6} spacing={1}>
