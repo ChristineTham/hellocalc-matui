@@ -1,6 +1,6 @@
-import { createMuiTheme } from '@material-ui/core'
+import { createTheme } from '@mui/material/styles'
 
-const theme = createMuiTheme({
+const theme = createTheme({
   themeName: 'Hello Tham',
   typography: {
     fontFamily: [
@@ -23,12 +23,6 @@ const theme = createMuiTheme({
     secondary: {
       main: '#cc3366',
     },
-    // background: {
-    //   default: '#ff99cc',
-    // },
-    // background: {
-    //   default: '#ffccff',
-    // },
   },
 })
 

@@ -1,8 +1,8 @@
 import * as React from 'react'
-import Container from '@material-ui/core/Container'
-import CssBaseline from '@material-ui/core/CssBaseline'
-import Grid from '@material-ui/core/Grid'
-import Box from '@material-ui/core/Box'
+import Container from '@mui/material/Container'
+import CssBaseline from '@mui/material/CssBaseline'
+import Grid from '@mui/material/Grid'
+import Box from '@mui/material/Box'
 
 import CalcInput from '../components/CalcInput'
 import CalcScreen from '../components/CalcScreen'

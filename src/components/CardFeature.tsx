@@ -1,18 +1,18 @@
 import * as React from 'react'
-import Button from '@material-ui/core/Button'
-import Card from '@material-ui/core/Card'
-import CardActions from '@material-ui/core/CardActions'
-import CardContent from '@material-ui/core/CardContent'
-import CardHeader from '@material-ui/core/CardHeader'
-import SvgIcon from '@material-ui/core/SvgIcon'
-import Typography from '@material-ui/core/Typography'
-import Avatar from '@material-ui/core/Avatar'
-import { pink } from '@material-ui/core/colors'
-import { makeStyles } from '@material-ui/core/styles'
-import Grid from '@material-ui/core/Grid'
+import Button from '@mui/material/Button'
+import Card from '@mui/material/Card'
+import CardActions from '@mui/material/CardActions'
+import CardContent from '@mui/material/CardContent'
+import CardHeader from '@mui/material/CardHeader'
+import SvgIcon from '@mui/material/SvgIcon'
+import Typography from '@mui/material/Typography'
+import Avatar from '@mui/material/Avatar'
+import { pink } from '@mui/material/colors'
+import { makeStyles } from 'tss-react/mui'
+import Grid from '@mui/material/Grid'
 import { navigate } from 'gatsby'
 
-const useStyles = makeStyles((theme) => ({
+const useStyles = makeStyles()((theme) => ({
   '@global': {
     ul: {
       margin: 0,
@@ -55,7 +55,7 @@ const CardFeature: React.FC<CardFeature> = ({
   buttonTitle,
   target,
 }: CardFeature) => {
-  const classes = useStyles()
+  const { classes } = useStyles()
   return (
     <Grid item key={title} xs={12} sm={6} md={3}>
       <Card>

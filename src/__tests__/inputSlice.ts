@@ -4,10 +4,6 @@ import input, {
   insertInput,
   deleteInput,
   clearInput,
-  cursorLeft,
-  cursorRight,
-  cursorBegin,
-  cursorEnd,
   changeSign,
   InputState,
 } from '../features/input/inputSlice'

@@ -1,9 +1,9 @@
 import * as React from 'react'
-import Container from '@material-ui/core/Container'
-import CssBaseline from '@material-ui/core/CssBaseline'
-import Grid from '@material-ui/core/Grid'
-import Typography from '@material-ui/core/Typography'
-import Box from '@material-ui/core/Box'
+import Container from '@mui/material/Container'
+import CssBaseline from '@mui/material/CssBaseline'
+import Grid from '@mui/material/Grid'
+import Typography from '@mui/material/Typography'
+import Box from '@mui/material/Box'
 import {
   mdiCalculator,
   mdiCalculatorVariant,

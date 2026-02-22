@@ -1,5 +1,5 @@
 import React from 'react'
-import MaterialTable, { Column } from 'material-table'
+import MaterialTable, { Column } from '@material-table/core'
 
 interface Row {
   name: string
@@ -43,7 +43,7 @@ export default function ExprHistory() {
       data={state.data}
       editable={{
         onRowAdd: (newData) =>
-          new Promise((resolve) => {
+          new Promise<void>((resolve) => {
             setTimeout(() => {
               resolve()
               setState((prevState) => {
@@ -54,7 +54,7 @@ export default function ExprHistory() {
             }, 600)
           }),
         onRowUpdate: (newData, oldData) =>
-          new Promise((resolve) => {
+          new Promise<void>((resolve) => {
             setTimeout(() => {
               resolve()
               if (oldData) {
@@ -67,7 +67,7 @@ export default function ExprHistory() {
             }, 600)
           }),
         onRowDelete: (oldData) =>
-          new Promise((resolve) => {
+          new Promise<void>((resolve) => {
             setTimeout(() => {
               resolve()
               setState((prevState) => {

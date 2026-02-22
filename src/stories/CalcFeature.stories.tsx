@@ -1,12 +1,12 @@
 import React from 'react'
+import CssBaseline from '@mui/material/CssBaseline'
 import { storiesOf } from '@storybook/react'
-import { muiTheme } from 'storybook-addon-material-ui'
-import { createMuiTheme } from '@material-ui/core/styles'
+import { createTheme, ThemeProvider } from '@mui/material/styles'
 import { mdiCalculator } from '@mdi/js'
 
 import CalcFeature from '../components/CardFeature'
 
-const theme = createMuiTheme({
+const theme = createTheme({
   palette: {
     primary: {
       main: '#660099',
@@ -24,7 +24,7 @@ const theme = createMuiTheme({
 })
 
 storiesOf('CalcFeature', module)
-  .addDecorator(muiTheme([theme]))
+  .addDecorator((story) => <ThemeProvider theme={theme}><CssBaseline />{story()}</ThemeProvider>)
   .add('Example', () => (
     <CalcFeature
       title="Sample Title"

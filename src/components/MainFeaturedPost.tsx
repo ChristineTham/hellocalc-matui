@@ -1,11 +1,11 @@
 /* eslint-disable react/jsx-curly-brace-presence */
 import React from 'react'
-import { makeStyles } from '@material-ui/core/styles'
-import Paper from '@material-ui/core/Paper'
-import Typography from '@material-ui/core/Typography'
-import Grid from '@material-ui/core/Grid'
+import { makeStyles } from 'tss-react/mui'
+import Paper from '@mui/material/Paper'
+import Typography from '@mui/material/Typography'
+import Grid from '@mui/material/Grid'
 
-const useStyles = makeStyles((theme) => ({
+const useStyles = makeStyles()((theme) => ({
   mainFeaturedPost: {
     position: 'relative',
     backgroundColor: theme.palette.grey[800],
@@ -44,7 +44,7 @@ interface PostType {
 }
 
 const MainFeaturedPost: React.FC<PostType> = ({ post }: PostType) => {
-  const classes = useStyles()
+  const { classes } = useStyles()
 
   return (
     <Paper

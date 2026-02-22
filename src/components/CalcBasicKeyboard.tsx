@@ -1,19 +1,19 @@
 import * as React from 'react'
-import Grid from '@material-ui/core/Grid'
-import Button from '@material-ui/core/Button'
-import Card from '@material-ui/core/Card'
-import CardContent from '@material-ui/core/CardContent'
-import CardHeader from '@material-ui/core/CardHeader'
-import Tooltip from '@material-ui/core/Tooltip'
-import SvgIcon from '@material-ui/core/SvgIcon'
-import { makeStyles } from '@material-ui/core/styles'
-import ClearIcon from '@material-ui/icons/HighlightOff'
-import StackIcon from '@material-ui/icons/Reorder'
-import ArrowDownwardIcon from '@material-ui/icons/ArrowDownward'
-import ArrowUpwardIcon from '@material-ui/icons/ArrowUpward'
-// import SwapHorizIcon from '@material-ui/icons/SwapHoriz'
-import VerticalAlignBottomIcon from '@material-ui/icons/VerticalAlignBottom'
-import BackspaceIcon from '@material-ui/icons/Backspace'
+import Grid from '@mui/material/Grid'
+import Button from '@mui/material/Button'
+import Card from '@mui/material/Card'
+import CardContent from '@mui/material/CardContent'
+import CardHeader from '@mui/material/CardHeader'
+import Tooltip from '@mui/material/Tooltip'
+import SvgIcon from '@mui/material/SvgIcon'
+import { makeStyles } from 'tss-react/mui'
+import ClearIcon from '@mui/icons-material/HighlightOff'
+import StackIcon from '@mui/icons-material/Reorder'
+import ArrowDownwardIcon from '@mui/icons-material/ArrowDownward'
+import ArrowUpwardIcon from '@mui/icons-material/ArrowUpward'
+// import SwapHorizIcon from '@mui/icons-material/SwapHoriz'
+import VerticalAlignBottomIcon from '@mui/icons-material/VerticalAlignBottom'
+import BackspaceIcon from '@mui/icons-material/Backspace'
 import { mdiAlphaXBox, mdiArrowRightBox } from '@mdi/js'
 import { useDispatch, useSelector } from 'react-redux'
 
@@ -37,11 +37,10 @@ import {
   rollUp,
   rollDown,
   exchangeXY,
-  unaryOp,
   binaryOp,
 } from '../features/calculator/calculatorSlice'
 
-const useStyles = makeStyles(() => ({
+const useStyles = makeStyles()(() => ({
   root: {
     flexGrow: 1,
   },
@@ -68,7 +67,7 @@ const InputKey: React.FC<InputKeyProps> = ({
   tooltip,
   children,
 }: InputKeyProps) => {
-  const classes = useStyles()
+  const { classes } = useStyles()
   const dispatch = useDispatch()
 
   return (
@@ -86,14 +85,16 @@ const InputKey: React.FC<InputKeyProps> = ({
   )
 }
 
+import { AnyAction } from 'redux'
+
 type OpKeyProps = {
-  op: () => void
+  op: () => AnyAction
   tooltip: string
   children: React.ReactNode
 }
 
 const OpKey: React.FC<OpKeyProps> = ({ op, tooltip, children }: OpKeyProps) => {
-  const classes = useStyles()
+  const { classes } = useStyles()
   const dispatch = useDispatch()
 
   return (
@@ -113,42 +114,6 @@ const OpKey: React.FC<OpKeyProps> = ({ op, tooltip, children }: OpKeyProps) => {
   )
 }
 
-type UnaryOpProps = {
-  op: math.MathJsFunctionName
-  tooltip: string
-  children: React.ReactNode
-}
-
-const UnaryOpKey: React.FC<UnaryOpProps> = ({
-  op,
-  tooltip,
-  children,
-}: UnaryOpProps) => {
-  const classes = useStyles()
-  const dispatch = useDispatch()
-  const currInput = useSelector((state: RootState) => state.input.current)
-
-  return (
-    <Tooltip title={tooltip} arrow>
-      <Grid item>
-        <Button
-          className={classes.calcKey}
-          variant="contained"
-          onClick={() => {
-            if (currInput) {
-              dispatch(enterX(currInput))
-              dispatch(clearInput())
-            }
-            dispatch(unaryOp(op))
-          }}
-          color="primary"
-        >
-          {children}
-        </Button>
-      </Grid>
-    </Tooltip>
-  )
-}
 
 type BinaryOpProps = {
   op: math.MathJsFunctionName
@@ -161,7 +126,7 @@ const BinaryOpKey: React.FC<BinaryOpProps> = ({
   tooltip,
   children,
 }: BinaryOpProps) => {
-  const classes = useStyles()
+  const { classes } = useStyles()
   const dispatch = useDispatch()
   const currInput = useSelector((state: RootState) => state.input.current)
 
@@ -189,7 +154,7 @@ const BinaryOpKey: React.FC<BinaryOpProps> = ({
 }
 
 const EnterKey: React.FC = () => {
-  const classes = useStyles()
+  const { classes } = useStyles()
   const dispatch = useDispatch()
   const currInput = useSelector((state: RootState) => state.input.current)
 

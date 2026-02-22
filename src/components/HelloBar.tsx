@@ -1,15 +1,16 @@
 import React from 'react'
-import { createStyles, makeStyles, Theme } from '@material-ui/core/styles'
-import AppBar from '@material-ui/core/AppBar'
-import Toolbar from '@material-ui/core/Toolbar'
-import Hidden from '@material-ui/core/Hidden'
-import Typography from '@material-ui/core/Typography'
-import IconButton from '@material-ui/core/IconButton'
-import MenuIcon from '@material-ui/icons/Menu'
-import Button from '@material-ui/core/Button'
-import HomeIcon from '@material-ui/icons/Home'
-import InfoIcon from '@material-ui/icons/Info'
-import SvgIcon from '@material-ui/core/SvgIcon'
+import { Theme } from '@mui/material/styles'
+import { makeStyles } from 'tss-react/mui'
+import AppBar from '@mui/material/AppBar'
+import Toolbar from '@mui/material/Toolbar'
+import Hidden from '@mui/material/Hidden'
+import Typography from '@mui/material/Typography'
+import IconButton from '@mui/material/IconButton'
+import MenuIcon from '@mui/icons-material/Menu'
+import Button from '@mui/material/Button'
+import HomeIcon from '@mui/icons-material/Home'
+import InfoIcon from '@mui/icons-material/Info'
+import SvgIcon from '@mui/material/SvgIcon'
 import {
   mdiCalculator,
   mdiCalculatorVariant,
@@ -19,9 +20,9 @@ import {
 
 // eslint-disable-next-line import/no-extraneous-dependencies
 import { Link, navigate } from 'gatsby'
-import Menu from '@material-ui/core/Menu'
-import MenuItem from '@material-ui/core/MenuItem'
-import Avatar from '@material-ui/core/Avatar'
+import Menu from '@mui/material/Menu'
+import MenuItem from '@mui/material/MenuItem'
+import Avatar from '@mui/material/Avatar'
 
 import logo from '../images/logo-square.svg'
 import profile from '../images/profile.jpg'
@@ -36,26 +37,24 @@ const FeatureIcon = ({ icon }: FeatureIconProp) => (
   </SvgIcon>
 )
 
-const useStyles = makeStyles((theme: Theme) =>
-  createStyles({
-    root: {
-      flexGrow: 1,
-      borderBottom: `1px solid ${theme.palette.divider}`,
-    },
-    menuButton: {
-      marginRight: theme.spacing(1),
-    },
-    title: {
-      flexGrow: 1,
-    },
-    button: {
-      margin: theme.spacing(1),
-    },
-  })
-)
+const useStyles = makeStyles()((theme: Theme) => ({
+  root: {
+    flexGrow: 1,
+    borderBottom: `1px solid ${theme.palette.divider}`,
+  },
+  menuButton: {
+    marginRight: theme.spacing(1),
+  },
+  title: {
+    flexGrow: 1,
+  },
+  button: {
+    margin: theme.spacing(1),
+  },
+}))
 
 export default function HelloBar() {
-  const classes = useStyles()
+  const { classes } = useStyles()
 
   const [anchorEl, setAnchorEl] = React.useState<null | HTMLElement>(null)
 
