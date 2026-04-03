@@ -105,5 +105,41 @@
     "start-server-and-test": "^2.0.0",
     "ts-jest": "^29.1.1",
     "ts-loader": "^9.4.4"
+  },
+  "overrides": {
+    "ansi-regex@>=3.0.0 <3.0.1": "3.0.1",
+    "ansi-regex@>=4.0.0 <4.1.1": "4.1.1",
+    "brace-expansion@>=1.0.0 <1.1.13": "1.1.13",
+    "brace-expansion@>=2.0.0 <2.0.3": "2.0.3",
+    "brace-expansion@>=4.0.0 <5.0.5": "5.0.5",
+    "decode-uri-component": "0.2.1",
+    "flatted": "3.4.2",
+    "minimatch@>=3.0.0 <3.1.4": "3.1.4",
+    "minimatch@>=9.0.0 <9.0.7": "9.0.9",
+    "multer": "2.1.1",
+    "nested-object-assign": "1.0.4",
+    "picomatch": "2.3.2",
+    "semver@>=2.0.0-alpha <5.7.2": "5.7.2",
+    "socket.io-parser": "4.2.6",
+    "svgo": "2.8.2",
+    "tar-fs@>=2.0.0 <2.1.4": "2.1.4",
+    "ua-parser-js@>=0.7.0 <0.7.24": "0.7.41",
+    "y18n@4.0.0": "4.0.1",
+    "@parcel/watcher": {
+      "picomatch": "4.0.4"
+    },
+    "immutable": "3.8.3",
+    "ini@<1.3.6": "1.3.6",
+    "lodash": "4.18.1",
+    "ts-loader": {
+      "micromatch": "4.0.8"
+    },
+    "path-to-regexp@<0.1.13": "0.1.13",
+    "js-yaml@<3.14.2": "3.14.2",
+    "store2": "2.14.4",
+    "yaml@>=1.0.0 <1.10.3": "1.10.3",
+    "yaml@>=2.0.0 <2.8.3": "2.8.3",
+    "debug@>=3.2.0 <3.2.7": "3.2.7",
+    "min-document": "2.19.2"
   }
 }
