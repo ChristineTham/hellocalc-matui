@@ -1,6 +1,6 @@
 import React from 'react'
+import type { Meta, StoryObj } from '@storybook/react'
 import CssBaseline from '@mui/material/CssBaseline'
-import { storiesOf } from '@storybook/react'
 import { createTheme, ThemeProvider } from '@mui/material/styles'
 import { mdiCalculator } from '@mdi/js'
 
@@ -14,18 +14,21 @@ const theme = createTheme({
     secondary: {
       main: '#cc3366',
     },
-    // background: {
-    //   default: '#ff99cc',
-    // },
-    // background: {
-    //   default: '#ffccff',
-    // },
   },
 })
 
-storiesOf('CalcFeature', module)
-  .addDecorator((story) => <ThemeProvider theme={theme}><CssBaseline />{story()}</ThemeProvider>)
-  .add('Example', () => (
+const meta: Meta<typeof CalcFeature> = {
+  component: CalcFeature,
+  decorators: [
+    (story) => <ThemeProvider theme={theme}><CssBaseline />{story()}</ThemeProvider>,
+  ],
+}
+
+export default meta
+type Story = StoryObj<typeof CalcFeature>
+
+export const Example: Story = {
+  render: () => (
     <CalcFeature
       title="Sample Title"
       icon={mdiCalculator}
@@ -33,4 +36,5 @@ storiesOf('CalcFeature', module)
       buttonTitle="button"
       target="/"
     />
-  ))
+  ),
+}

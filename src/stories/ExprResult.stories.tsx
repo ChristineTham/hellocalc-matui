@@ -1,6 +1,6 @@
 import React from 'react'
+import type { Meta, StoryObj } from '@storybook/react'
 import CssBaseline from '@mui/material/CssBaseline'
-import { storiesOf } from '@storybook/react'
 import { createTheme, ThemeProvider } from '@mui/material/styles'
 
 import ExprResult from '../components/ExprResult'
@@ -13,17 +13,21 @@ const theme = createTheme({
     secondary: {
       main: '#cc3366',
     },
-    // background: {
-    //   default: '#ff99cc',
-    // },
-    // background: {
-    //   default: '#ffccff',
-    // },
   },
 })
 
-storiesOf('CalcResult', module)
-  .addDecorator((story) => <ThemeProvider theme={theme}><CssBaseline />{story()}</ThemeProvider>)
-  .add('Example', () => (
+const meta: Meta<typeof ExprResult> = {
+  component: ExprResult,
+  decorators: [
+    (story) => <ThemeProvider theme={theme}><CssBaseline />{story()}</ThemeProvider>,
+  ],
+}
+
+export default meta
+type Story = StoryObj<typeof ExprResult>
+
+export const Example: Story = {
+  render: () => (
     <ExprResult resulttype="Evaluate" input="1+2" output="3" />
-  ))
+  ),
+}
