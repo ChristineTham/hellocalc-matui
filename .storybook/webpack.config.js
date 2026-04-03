@@ -29,6 +29,7 @@ module.exports = async ({ config }) => {
         ['react-app', { flow: false, typescript: true }],
       ],
       plugins: [
+        // use babel-plugin-remove-graphql-queries to remove static queries from components when rendering in storybook
         require.resolve('babel-plugin-remove-graphql-queries'),
       ],
     },
